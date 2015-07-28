@@ -1,0 +1,13 @@
+<div>
+<h2 class="page-header">View Log for Date {{date}}</h2>
+<input type="text" ng-model="searchVal" style="border-color:initial"></input><button type="button" ng-click="search(searchVal)" style="color:black;position:absolute;left:220px;">Search</button>
+</div>
+</br>
+<div>
+<pre>
+{{logData}}
+</pre>
+<button type="button" ng-click="reverseOrder()" style="color:black">Reverse Order</button>
+<button type="button" ng-click="previous()" style="color:black">Previous</button>
+<button type="button" ng-click="next()" style="color:black">Next</button>
+</div>

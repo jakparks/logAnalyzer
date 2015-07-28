@@ -1,0 +1,29 @@
+<h2 class="page-header">Push Notification Devices</h2>
+
+<br />
+<div>Showing {{startIndex | number}} to {{(startIndex + numRecords - 1) | number}} of {{totalRecords | number}} entries</div>
+<table class="userProfiles table table-striped table-bordered table-hover table-compressed">
+    <tr>
+	<th>App Id</th>
+  <th>Device Type</th>
+  <th>Device Id</th>
+  <th>Notif Device Id</th>
+  <th>Mod Date</th>
+  <th ng-show="deviceInactive">Failure Description</th>
+    </tr>
+    <tr ng-repeat="device in devices">
+	<td ng-bind="device.applicationId"/>
+  <td ng-bind="device.deviceType"/>
+  <td ng-bind="device.deviceId"/>
+  <td ng-bind="device.notifDeviceId"/>
+  <td ng-bind="device.modDate"/>
+  <td ng-show="deviceInactive" ng-bind="device.failureDescription"/>
+    </tr>
+</table>
+
+<ul class="pager">
+  <li><a href="?active={{deviceActive}}&startIndex={{(startIndex == 1 ? 1 : startIndex - pageSize)}}">&larr; Previous</a></li>
+  <li><a href="?active={{deviceActive}}&startIndex={{(startIndex + pageSize > totalRecords ? startIndex : startIndex + pageSize)}}">Next &rarr;</a></li>
+</ul>
+
+<div ng-if="showSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>

@@ -1,0 +1,17 @@
+[
+	{ "name": "Cerulean", "themeId": "cerulean", "default": false },
+	{ "name": "Cosmo", "themeId": "cosmo", "default": false },
+	{ "name": "Cyborg", "themeId": "cyborg", "default": false },
+	{ "name": "Darkly", "themeId": "darkly", "default": false },
+	{ "name": "Flatly", "themeId": "flatly", "default": false },
+	{ "name": "Journal", "themeId": "journal", "default": false },
+	{ "name": "Lumen", "themeId": "lumen", "default": false },
+	{ "name": "Paper", "themeId": "paper", "default": false },
+	{ "name": "Readable", "themeId": "readable", "default": false },
+	{ "name": "Sandstone", "themeId": "sandstone", "default": false },
+	{ "name": "Simplex", "themeId": "simplex", "default": false },
+	{ "name": "Slate", "themeId": "slate", "default": false },
+	{ "name": "Spacelab", "themeId": "spacelab", "default": false },
+	{ "name": "Superhero", "themeId": "superhero", "default": true },
+	{ "name": "United", "themeId": "united", "default": false }
+]

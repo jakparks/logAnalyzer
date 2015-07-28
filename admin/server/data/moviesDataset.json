@@ -1,0 +1,38 @@
+[
+    {
+        "name":"Interstellar",
+        "rating":"8.9",
+        "description":"A team of explorers travel through a wormhole in an attempt to ensure humanity's survival.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1._SX140_CR0,0,140,209_.jpg"
+    },{
+        "name":"Guardians of the Galaxy",
+        "rating":"8.2",
+        "description":"A group of intergalactic criminals are forced to work together to stop a fanatical warrior from taking control of the universe.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMTAwMjU5OTgxNjZeQTJeQWpwZ15BbWU4MDUxNDYxODEx._V1._SY209_CR0,0,140,209_.jpg"
+    },{
+        "name":"X-Men: Days of Future Past",
+        "rating":"8.1",
+        "description":"The X-Men send Wolverine to the past in a desperate effort to change history and prevent an event that results in doom for both humans and mutants.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMjEwMDk2NzY4MF5BMl5BanBnXkFtZTgwNTY2OTcwMDE@._V1._SY209_CR0,0,140,209_.jpg"
+    },{
+        "name":"How to Train your Dragon 2",
+        "rating":"8.0",
+        "description":"When Hiccup and Toothless discover an ice cave that is home to hundreds of new wild dragons and the mysterious Dragon Rider, the two friends find themselves at the center of a battle to protect the peace.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMzMwMTAwODczN15BMl5BanBnXkFtZTgwMDk2NDA4MTE@._V1._SY209_CR0,0,140,209_.jpg"
+    },{
+        "name":"Edge of Tomorrow",
+        "rating":"8.0",
+        "description":"A military officer is brought into an alien war against an extraterrestrial enemy who can reset the day and know the future. When this officer is enabled with the same power, he teams up with a Special Forces warrior to try and end the war.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1._SY209_CR0,0,140,209_.jpg"
+    },{
+        "name":"The Grand Budapest Hotel",
+        "rating":"7.9",
+        "description":"The adventures of Gustave H, a legendary concierge at a famous hotel from the fictional Republic of Zubrowka between the first and second World Wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMzM5NjUxOTEyMl5BMl5BanBnXkFtZTgwNjEyMDM0MDE@._V1._SY209_CR0,0,140,209_.jpg"
+    },{
+        "name":"The Raid 2",
+        "rating":"7.8",
+        "description":"Only a short time after the first raid, Rama goes undercover with the thugs of Jakarta and plans to bring down the syndicate and uncover the corruption within his police force.",
+        "photoUrl":"http://ia.media-imdb.com/images/M/MV5BMTg5MTE2NjA4OV5BMl5BanBnXkFtZTgwMTUyMjczMTE@._V1._SY209_CR0,0,140,209_.jpg"
+    }
+]

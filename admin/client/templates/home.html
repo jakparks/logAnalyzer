@@ -1,0 +1,21 @@
+<h2 class="page-header">Log Analyzer</h2>
+<div class="row">
+	<div class="col-sm-12 col-md-6">
+		<div class="panel panel-default scoreboard">
+			<div class="panel-heading">Enter Date</div>
+				<p class="input-group">
+					<input type="text" class="form-control" datepicker-popup="" ng-model="datePick.dateSelected" is-open="opened"  date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+					</span>
+				</p>
+			<div class="panel-heading"></div>
+			<div class="panel-body">
+					<form ng-app="logAnalyzer" name="dateForm" novalidate>
+					</form>
+					<span>{{ datePick.dateSelected | date:'fullDate'}}</span><a ng-href="/logAnalyzer/viewLog?date={{datePick.dateString()}}" style="color:black;position:absolute;right:65px;">Submit</button>
+			</div>
+		</div>
+
+	</div>
+</div>

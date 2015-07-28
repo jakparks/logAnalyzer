@@ -1,0 +1,29 @@
+<h2 class="page-header"> {{title}} </h2>
+
+<div>Showing {{startIndex | number}} to {{(startIndex + numRecords - 1) | number}} of {{totalRecords | number}} entries</div>
+<table class="metrics table table-striped table-bordered table-hover table-compressed">
+    <tr>
+        <th>Day</th>
+        <th>Topic</th>
+        <th>Type</th>
+        <th>Process</th>
+        <th>Group</th>
+        <th>Count</th>
+    </tr>
+    <tr ng-repeat="metric in metrics">
+        <td ng-bind="metric.day"/>
+        <td ng-bind="metric.topic"/>
+        <td ng-bind="metric.type"/>
+        <td ng-bind="metric.processName"/>
+        <td ng-bind="metric.group"/>
+        <td ng-bind="metric.count | number"/>
+    </tr>
+</table>
+
+<ul class="pager">
+  <li><a href="?startIndex={{(startIndex == 1 ? 1 : startIndex - pageSize)}}">&larr; Previous</a></li>
+  <li><a href="?startIndex={{(startIndex + pageSize > totalRecords ? startIndex : startIndex + pageSize)}}">Next &rarr;</a></li>
+</ul>
+
+<div ng-if="showSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+

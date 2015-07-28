@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Log Analyzer</title>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/bower_components/bootswatch/superhero/bootstrap.min.css">
+		<link rel="stylesheet" href="/client/css/app.css">
+		<style>[ng-cloak] { display: none; }</style>
+	</head>
+	<body ng-app="la" ng-controller="rootController">
+
+		<nav ng-if="!isLogin" class="navbar navbar-inverse navbar-fixed-top">
+      		<div class="container-fluid">
+        		<div class="navbar-header">
+          			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            		<span class="sr-only">Toggle navigation</span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+	            		<span class="icon-bar"></span>
+          			</button>
+          			<a class="navbar-brand" href="/mystery">
+          				<img src="/client/img/mm_flower.png"/>
+          				Mystery Machine Admin
+          			</a>
+        		</div>
+        		<div id="navbar" class="navbar-collapse collapse">
+          			<ul class="nav navbar-nav navbar-right">
+			          	<li class="dropdown">
+          					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Menu <span class="caret"></span></a>
+      						<ul class="dropdown-menu" role="menu">
+      							<li ng-repeat="n in navs" ng-class="{ 'active': n.isActive, '': !n.isActive }">
+          					            <a ng-if="!n.submenu" href="{{ n.url }}" ng-bind="n.name" ng-click="onNavSwitch(n)"></a>
+						            <span ng-if="n.submenu" class="submenu-header"> {{ n.name }}  <small class="glyphicon glyphicon-chevron-down"></small> </span>
+          				                    <a class="subnav" ng-class="{ 'active': sub.isActive, '': !sub.isActive }" ng-repeat="sub in n.submenu" href="{{ sub.url }}" ng-bind="sub.name" ng-click="onNavSwitch(sub)"></a>
+          						</li>
+      						</ul>
+        				</li>
+			      	</ul>
+        		</div>
+      		</div>
+    	</nav>
+
+    	<div class="container-fluid">
+      		<div class="row">
+        		<div class="col-sm-3 col-md-2 sidebar" ng-if="!isLogin">
+       	   			<div style="">
+    					<img src="/client/img/ciscoLogo.png"/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    					<img class="hidden-xs" style="height:64px" src="/client/img/mm_anim.gif"/>
+    				</div>
+          			<ul class="nav nav-sidebar">
+          				<li ng-repeat="n in navs" ng-class="{ 'active': n.isActive, '': !n.isActive }">
+          				      <a ng-if="!n.submenu" href="{{ n.url }}" ng-bind="n.name" ng-click="onNavSwitch(n)"></a>
+					      				<a data-toggle="collapse" data-target="#sub_{{n.name | noSpace}}" ng-if="n.submenu" class="submenu-header" ng-click="onCollapse(n)"> {{ n.name }}  <small class="glyphicon glyphicon-chevron-down" ng-hide="n.collapsed"></small> <small class="glyphicon glyphicon-chevron-up" ng-show="n.collapsed"></small></a>
+												<ul class="collapse in nav nav-sidebar" id="sub_{{n.name | noSpace}}">
+          				      <li class="subnav" ng-repeat="sub in n.submenu" style="list-style-type:none">
+												<a ng-if="!sub.submenu" class="subnav" ng-class="{ 'active': sub.isActive, '': !sub.isActive }" href="{{ sub.url }}" ng-bind="sub.name" ng-click="onNavSwitch(sub)"></a>
+												<a ng-if="sub.submenu" class="submenu-header" ng-bind="sub.name"></a>
+												<ul ng-if="sub.submenu" class="collapse in nav nav-sidebar">
+												<li class="subnav" ng-repeat="sub2 in sub.submenu" style="list-style-type:none"><a class="subnav" ng-class="{ 'active': sub2.isActive, '': !sub2.isActive }" href="{{ sub2.url }}" ng-bind="sub2.name" ng-click="onNavSwitch(sub2)"></a>
+												</ul>
+												</li>
+												</ul>
+          				</li>
+          			</ul>
+        		</div>
+        		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+        			<section ng-view></section>
+        		</div>
+     		</div>
+    	</div>
+
+        <script src="/bower_components/angular/angular.js"></script>
+		<script src="/bower_components/angular-route/angular-route.min.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/bower_components/underscore/underscore-min.js"></script>
+		<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="/bower_components/moment/min/moment.min.js"></script>
+		<script src="/bower_components/highcharts/highcharts.js"></script>
+        <script src="/client/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<h2 class="page-header"> Send Notification to User </h2>
+
+<form name="sendForm" ng-submit="sendForm.$valid && submit(userId)" novalidate>
+
+  <div class="form-group">
+    <p>userId</p>
+      <input type="text" name="userId" ng-model="userId" ng-change="reset()" required>
+      <p ng-show="sendForm.userId.$invalid && !sendForm.userId.$pristine" class="help-block"> userId Required</p>
+      <p ng-show="userNotFound" class="help-block"> userId Not Found</p>
+  </div>
+  <div class="form-group">
+    <p>Interest Type</p>
+      <input type="text" name="interestType" ng-model="interestType" required>
+      <p ng-show="sendForm.interestType.$invalid && !sendForm.interestType.$pristine" class="help-block"> Interest Type Required</p>
+  </div>
+  <div class="form-group">
+    <p>Message</p>
+      <input type="text" name="message" ng-model="message" required>
+      <p ng-show="sendForm.message.$invalid && !sendForm.message.$pristine" class="help-block"> Message Required</p>
+  </div>
+  <div class="form-group">
+    <p>Priority</p>
+      <select>
+        <option value="high" selected="selected">High</option>
+        <option value="low">Low</option>
+      </select>
+  </div>
+  <div class="form-group">
+    <p>changeObject (JSON)</p>
+    <textarea name="changeObjectText" ng-model="changeObjectText" ng-change="reset()"></textarea>
+    <p ng-show="sendForm.changeObjectText.$invalid && !sendForm.changeObjectText.$pristine" class="help-block">changeObject Required</p>
+  </div>
+  <div>
+    <input type="submit" ng-disabled="sendForm.$invalid" class="btn btn-primary pull-left" value="Submit">
+  </div>
+
+
+</form>
+</br></br>
+<div><span ng-show="postSuccess">Notification Sent Successfully.</span></div>
+<div><span ng-show="postError">Error: HTTP Request Failed</span></div>
+<div><span ng-show="errorJSON">Error: JSON is invalid</span></div>

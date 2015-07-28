@@ -1,0 +1,27 @@
+<h2 class="page-header">Subscriptions</h2>
+
+<input type="text" value="" maxlength="100" placeholder="Search" ng-model="searchValue" ng-change="searchId(searchValue)"/>
+
+<br />
+<div>Showing {{startIndex | number}} to {{(startIndex + numRecords - 1) | number}} of {{totalRecords | number}} entries</div>
+<table class="subscriptions table table-striped table-bordered table-hover table-compressed">
+    <tr>
+	<th>Subscription Id</th>
+	<th>User Id</th>
+  <th>Name</th>
+  <th>Date</th>
+    </tr>
+    <tr ng-repeat="subscription in subscriptions">
+	<td> <a ng-href="/mystery/subscription?id={{subscription._id}}"> {{ subscription._id }} </a></td>
+	<td ng-bind="subscription.userId"/>
+  <td ng-bind="subscription.name"/>
+  <td ng-bind="subscription.modDate | date:'medium'"/>
+    </tr>
+</table>
+
+<ul class="pager">
+  <li><a href="?startIndex={{(startIndex == 1 ? 1 : startIndex - pageSize)}}">&larr; Previous</a></li>
+  <li><a href="?startIndex={{(startIndex + pageSize > totalRecords ? startIndex : startIndex + pageSize)}}">Next &rarr;</a></li>
+</ul>
+
+<div ng-if="showSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>

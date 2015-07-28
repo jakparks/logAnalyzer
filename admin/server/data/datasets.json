@@ -1,0 +1,81 @@
+[
+    {
+        "title":"Iphone Apps",
+        "description":"Best Iphone apps of 2014",
+        "datasetName":"apps",
+        "colDefs": [
+            {
+                "param":"name",
+                "displayName":"Name",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"description",
+                "displayName":"Description",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"photoUrl",
+                "displayName":"Image",
+                "format":"image",
+                "cssClass":"app-photo"
+            }
+        ]
+    },
+    {
+        "title":"Best Sci-Fi Books",
+        "description":"Best Sci-Fi Books of All Time",
+        "datasetName":"books",
+        "colDefs": [
+            {
+                "param":"name",
+                "displayName":"Name",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"author",
+                "displayName":"Author",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"description",
+                "displayName":"Description",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"photoUrl",
+                "displayName":"Image",
+                "format":"image",
+                "cssClass":"app-photo"
+            }
+        ]
+    },
+    {
+        "title":"Best Movies",
+        "description":"Best Movies of 2014",
+        "datasetName":"movies",
+        "colDefs": [
+            {
+                "param":"name",
+                "displayName":"Name",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"rating",
+                "displayName":"Rating",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"description",
+                "displayName":"Description",
+                "format":"string",
+                "cssClass":""
+            },{
+                "param":"photoUrl",
+                "displayName":"Image",
+                "format":"image",
+                "cssClass":"app-photo"
+            }
+        ]
+    }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project basedir="." default="build" name="NotificationService">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+
+    <target name="build">
+       <zip destfile="admin.zip" basedir="." excludes="build.xml,admin.zip"/>
+    </target>
+
+    <target name="clean">
+       <delete file="admin.zip"/>
+    </target>
+
+</project>

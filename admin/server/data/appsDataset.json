@@ -1,0 +1,31 @@
+[
+    {
+        "name":"Google Maps",
+        "description":"Google Maps, which was once included with all iPhones, is now an app that you have to download separately—and you should. Google Maps has proven itself more accurate than Apple's own map app, with turn-by-turn directions by car, foot, and public transportation.",
+        "photoUrl":"http://www5.pcmag.com/media/images/448502-google-maps-iphone.jpg?thumb=y"
+    },{
+        "name":"Google Translate",
+        "description":"With more than 30 languages supported and the ability to deliver impressively accurate results most of the time, the Google Translate app is one of the most remarkable programs you can load onto your iPhone.",
+        "photoUrl":"http://www7.pcmag.com/media/images/407765-best-iphone-apps-google-tra.jpg?thumb=y"
+    },{
+        "name":"Flixter",
+        "description":"Flixster isn't just another movie- and theater-information app. Yes, it does list movies with ratings and plots and theater show-times, but it also offers some extras, such as Rotten Tomatoes ratings and social integration.",
+        "photoUrl":"http://www1.pcmag.com/media/images/429513-flixster.jpg?thumb=y"
+    },{
+        "name":"IMDB Movies",
+        "description":"One of the handiest reference websites on the planet, IMDb never fails when it comes to looking up anything that has to do with TV, film, or Hollywood.",
+        "photoUrl":"http://www5.pcmag.com/media/images/399344-imdb.jpg?thumb=y"
+    },{
+        "name":"Weather Underground",
+        "description":"Weather Underground, our Editors' Choice for iPhone weather apps, succeeds because it sticks to what it does best: clearly presenting lots of hyper-local information in a simple and highly customizable interface. The rich data in this excellent app will keep the most info-hungry meteorology geek satisfied.",
+        "photoUrl":"http://www5.pcmag.com/media/images/368350-weather-underground.jpg"
+    },{
+        "name":"Wikipedia",
+        "description":"Half the fun of having a smartphone is looking things up when you're in the middle of a bar bet—and hopefully being right. Wikipedia is the go-to source for fact-checking in the mobile age, and the Wikipedia app usually returns results faster than a mobile search engine.",
+        "photoUrl":"http://www2.pcmag.com/media/images/334359-wikipedia.jpg"
+    },{
+        "name":"Wolfram Alpha",
+        "description":"WolframAlpha is like a math and science version of Wikipedia. It's an outstanding source of nerd knowledge and computation about virtually anything, from basic algebra to the depths of the universe. It's like a search engine for algebra, physics, engineering, and so much more—even nutritional information. The app does require an Internet connection to work.",
+        "photoUrl":"http://www8.pcmag.com/media/images/367645-wolframalpha.jpg?thumb=y"
+    }
+]

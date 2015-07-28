@@ -1,0 +1,43 @@
+{
+  "name": "MysteryMachine",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Kevin Broich",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "dependencies": {
+    "basic-auth-connect": "^1.0.0",
+    "bluebird": "^2.6.2",
+    "bower": "~1.3.3",
+    "express": "^4.13.1",
+    "log4js": "^0.6.21",
+    "mongodb": "^1.4.26",
+    "mongoskin": "^1.4.4",
+    "passport": "^0.2.1",
+    "passport-local": "^1.0.0",
+    "properties-reader": "0.0.8"
+  },
+  "devDependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "^1.0.0",
+    "error-handler": "^0.1.4",
+    "express": "~4.10.6",
+    "gulp": "^3.8.10",
+    "gulp-jshint": "^1.9.0",
+    "jade": "~0.31.2",
+    "method-override": "^1.0.0",
+    "mongojs": "~0.18.0",
+    "morgan": "~1.0.0",
+    "serve-favicon": "~2.1.3",
+    "underscore-node": "^0.1.2"
+  },
+  "engines": {
+    "node": "~0.10.x",
+    "npm": "1.2.x"
+  },
+  "licenses": [],
+  "contributors": []
+}

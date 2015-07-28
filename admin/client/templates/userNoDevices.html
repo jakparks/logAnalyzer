@@ -1,0 +1,21 @@
+<h2 class="page-header">User No Mobile Devices</h2>
+
+<div>Showing {{startIndex | number}} to {{(startIndex + numRecords - 1) | number}} of {{totalRecords | number}} entries</div>
+<table class="userNoDevices table table-striped table-bordered table-hover table-compressed">
+    <tr>
+	<th>Date</th>
+	<th>User Id</th>
+    </tr>
+    <tr ng-repeat="user in userNoDevices">
+	<td ng-bind="user.modDate | date:'medium'"/>
+	<td ng-bind="user.userId"/>
+    </tr>
+</table>
+
+<ul class="pager">
+  <li><a href="?startIndex={{(startIndex == 1 ? 1 : startIndex - pageSize)}}">&larr; Previous</a></li>
+  <li><a href="?startIndex={{(startIndex + pageSize > totalRecords ? startIndex : startIndex + pageSize)}}">Next &rarr;</a></li>
+</ul>
+
+<div ng-if="showSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+

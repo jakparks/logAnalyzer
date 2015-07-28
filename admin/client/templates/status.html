@@ -1,0 +1,40 @@
+<h2 class="page-header"> Status </h2>
+<h4>MongoDB Replication Status</h4>
+<table class="metrics table table-striped table-bordered table-hover table-compressed">
+	<th>Server</th>
+	<th>State</th>
+	<th>Health</th>
+	<th>Last Heartbeat Sent</th>
+	<th>Last Heartbeat Recvd</th>
+	<th>Syncing To</th>
+	<tr ng-repeat="server in replStatus.members">
+		<td ng-bind="server.name"></td>
+		<td ng-bind="server.stateStr"></td>
+		<td ng-bind="server.health"></td>
+		<td ng-bind="server.lastHeartbeat"></td>
+		<td ng-bind="server.lastHeartbeatRecv"></td>
+		<td ng-bind="server.syncingTo"></td>
+	</tr>
+</table>
+<div ng-if="showReplStatusSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+<br>
+<h4>Kafka Topic Status</h4>
+<table class="metrics table table-striped table-bordered table-hover table-compressed">
+	<th>Group</th>
+	<th>Topic</th>
+	<th>Pid</th>
+	<th>OffSet</th>
+	<th>LogSize</th>
+	<th>Lag</th>
+	<th>Owner</th>
+	<tr ng-repeat="line in topicStatus">
+		<td ng-bind="line.group"></td>
+		<td ng-bind="line.topic"></td>
+		<td ng-bind="line.pid"></td>
+		<td ng-bind="line.offSet"></td>
+		<td ng-bind="line.logSize"></td>
+		<td ng-bind="line.lag"></td>
+		<td ng-bind="line.owner"></td>
+	</tr>
+</table>
+<div ng-if="showTopicStatusSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>

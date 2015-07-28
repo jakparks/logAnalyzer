@@ -1,0 +1,38 @@
+[
+    {
+        "name":"Ender's Game",
+        "author":"Orson Scott Card",
+        "description":"Young Andrew Ender Wiggin, bred to be a genius, is drafted to Battle School where he trains to lead the century-long fight against the alien Buggers.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/e/enders-game/9780812550702_custom-14b6b3e2b8be027acc868fa0aba0670be8900168-s500-c85.jpg"
+    },{
+        "name":"Dune",
+        "author":"Frank Herbert",
+        "description":"Follows the adventures of Paul Atreides, the son of a betrayed duke given up for dead on a treacherous desert planet and adopted by its fierce, nomadic people, who help him unravel his most unexpected destiny.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/d/dune/9780441013593_custom-0d82381c416fc2ad6567c9216193a5c39b4f0cdb-s500-c85.jpg"
+    },{
+        "name":"1984",
+        "author":"George Orwell",
+        "description":"Portrays life in a future time when a totalitarian government watches over all citizens and directs all activities.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/1/1984/9780452284234_custom-a757580dfcfda8c90e6ea37b8287db376f4408f3-s500-c85.jpg"
+    },{
+        "name":"Fahrenheit 451",
+        "author":"Ray Bradbury",
+        "description":"In a far future world, television dominates, and books are outlawed. The totalitarian regime has ordered all books to be burned by firemen, whose job is to start the fires rather than stop them. But one fireman begins to see the value of the printed word.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/f/fahrenheit-451/9780345342966_custom-5c5c9e8c30e8eddc7e33e53056a8557222699ef0-s500-c85.jpg"
+    },{
+        "name":"Foundation",
+        "author":"Isaac Asimov",
+        "description":"A band of psychologists, under the leadership of psychohistorian Hari Seldon, plant a colony to encourage art, science, and technology in the declining Galactic Empire and to preserve the accumulated knowledge of humankind.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/f/foundation/9780553293357_custom-4680a4a7e1639d8cf0d2cbd1ee2e6dfceeb5b735-s500-c85.jpg"
+    },{
+        "name":"Neuromancer",
+        "author":"William Gibson",
+        "description":"Gibson's groundbreaking debut novel follows Case, a burned-out computer whiz, who is asked to steal a security code that is locked in the most heavily guarded databank in the solar system. A seminal work in the genre that would come to be known as cyberpunk.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/n/neuromancer/9780441012039_custom-7e989312eec9a96b102522a65f03bdcb8d30df72-s500-c85.jpg"
+    },{
+        "name":"I Robot",
+        "author":"Isaac Asimov",
+        "description":"Isaac Asimov changed our perception of robots forever when he formulated the laws governing their behavior. In I, Robot, Asimov chronicles the development of the robot through a series of interlinked stories: from its primitive origins in the present to its ultimate perfection in the not-so-distant future — a future in which humanity itself may be rendered obsolete.",
+        "photoUrl":"http://media.npr.org/assets/bakertaylor/covers/i/i-robot/9780553382563_custom-d5271e904c05142235155dd8823b6108e63ec8a9-s500-c85.jpg"
+    }
+]

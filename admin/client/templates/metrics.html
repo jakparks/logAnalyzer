@@ -1,0 +1,21 @@
+<h2 class="page-header"> {{title}} </h2>
+
+<div>Showing {{startIndex | number}} to {{(startIndex + numRecords - 1) | number}} of {{totalRecords | number}} entries</div>
+<table class="metrics table table-striped table-bordered table-hover table-compressed">
+    <tr>
+        <th>Day</th>
+        <th ng-repeat="header in headers" ng-if="header != '_id' && header != 'day' && header != 'area'">{{header}}</th>
+    </tr>
+    <tr ng-repeat="metric in metrics">
+        <td ng-bind="metric.day"/>
+        <td ng-repeat="header in headers" ng-if="header != '_id' && header != 'day' && header != 'area'">{{metric[header] || 0 | number}}</td>
+    </tr>
+</table>
+
+<ul class="pager">
+  <li><a href="?startIndex={{(startIndex == 1 ? 1 : startIndex - pageSize)}}">&larr; Previous</a></li>
+  <li><a href="?startIndex={{(startIndex + pageSize > totalRecords ? startIndex : startIndex + pageSize)}}">Next &rarr;</a></li>
+</ul>
+
+<div ng-if="showSpinner" class="table-spinner"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>
+
