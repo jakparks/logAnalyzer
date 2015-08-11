@@ -4,6 +4,9 @@ To Run (From admin directory):
 
 node server.js
 
+Will listen on port 3000
+Home URL: http://localhost:3000/logAnalyzer
+
 Dependencies:
 - express
 - body-parser
