@@ -1,5 +1,8 @@
 # logAnalyzer
 
+Before Running:
+Ensure that you have node.js installed on your system
+
 To Run (From admin directory):
 
 node server.js
